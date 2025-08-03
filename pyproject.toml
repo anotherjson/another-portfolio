@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "etf_portfolio_generator"
+version = "0.1.0"
+description = "A tool to generate ETF portfolios based on the Fama-French Three-Factor Model."
+authors = [
+  { name = "another-json", email = "jason.bellegarde@gmail.com" }
+]
+dependencies = [
+  "streamlit",
+  "pandas",
+  "duckdb"
+]
+
+[project.scripts]
+etf-cli = "src.cli:app"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest",
+    "ruff",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff",
+]

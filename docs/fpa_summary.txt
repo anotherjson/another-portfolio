@@ -1,0 +1,1509 @@
+Financial Planning
+Assumptions
+(Factor-Tilted Portfolio)
+Data Update
+Year-end 2024
+Published: Winter 2025
+Amended: April 2025		
+Raymond Kerzérho MBA, CFA
+Senior Researcher, Head,
+Shared Services Research
+
+This report was written by Raymond Kerzérho. The ideas, opinions, and recommendations contained in this
+document are those of the authors and do not necessarily represent the views of PWL Capital Inc.
+© PWL Capital Inc.
+All rights reserved. No part of this publication may be reproduced without prior written approval of the author
+and/or PWL Capital. PWL Capital would appreciate receiving a copy of any publication or material that uses
+this document as a source. Please cite this document as:
+PWL Capital Inc., “Financial Planning Assumptions for Factor-Tilted Portfolio”
+For more information about this or other publications from PWL Capital, contact:
+PWL Capital – Montreal, 3400 de Maisonneuve Ouest, Suite 1501, Montreal, Quebec H3Z 3B8
+Tel 514-875-7566 • 1-800-875-7566
+info@pwlcapital.com
+
+This document is published by PWL Capital Inc. for your information only. Information on which this document is based is available on
+request. Particular investments or trading strategies should be evaluated relative to each individual’s objectives, in consultation with the
+Investment Advisor. Opinions of PWL Capital constitute its judgment as of the date of this publication, are subject to change without
+notice and are provided in good faith but without responsibility for any errors or omissions contained herein. This document is supplied
+on the basis and understanding that neither PWL Capital Inc. nor its employees, agents or information suppliers is to be under any
+responsibility of liability whatsoever in respect thereof.
+
+Table of Content
+1. Introduction
+
+4
+
+2. Expected Inflation
+
+4
+
+3. Primary Residence
+
+4
+
+4. Expected Cost of Borrowing
+
+5
+
+5. Asset Class Expected Returns
+
+6
+
+6. Expected Standard Deviations
+
+7
+
+7. Expected Correlations
+
+7
+
+8. Composition of Asset Class Returns
+
+8
+
+9. Portfolio Expected Returns
+
+9
+
+Appendix: Financial Planning Assumptions – Naviplan Input Format
+
+10
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+3
+
+1. Introduction
+This guide is intended to provide Canadian financial planners with our best estimates of future asset class
+returns and volatilities to produce financial projections for their clients. This document assumes that investors
+hold a broadly diversified portfolio of publicly traded global fixed-income securities and equity, including
+developed and emerging stock markets. These estimates are valid uniquely in the context of an investor who
+purposely avoids concentration in one or a few securities or sectors. Our investment horizon is 30 years.
+Key inputs are highlighted in green for the NaviPlan financial planning software users. We have added an
+appendix to provide users of NaviPlan with data presented in a more user-friendly format.
+We have created this report specifically to help financial advisors who invest with mutual funds from
+Dimensional Fund Advisors Canada. The asset class expected returns, standard deviations, correlations, and
+distribution yields are designed to replicate the characteristics of the DFA Global Allocation funds. Importantly,
+these characteristics account for the exposure of these funds to the Fama-French factors.
+
+2. Expected Inflation
+Our estimate for long-run Canadian inflation is the average of Canadian historical inflation from 1900 to
+2023 and the Bank of Canada’s inflation target. These figures are 3.0% and 2.0%, respectively, for an inflation
+expectation of 2.5%.
+
+Table 1 - Expected Inflation Composition
+0.50 x (Historical Inflation) Plus
+
+0.50 x (Bank of Canada Target
+Inflation)
+
+Equals Expected Inflation
+
+3.0%
+
+2.0%
+
+2.5%
+
+Source: PWL Capital; Data Sources: Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of Optimists: 101 Years of Global Investment Returns, Princeton
+University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook and Sourcebook, 2018, Zurich: Credit Suisse
+Research Institute, 2021, Bank of Canada
+
+3. Primary Residence
+We estimate the expected real capital return for personal residences at 1% annually. The carrying costs of
+real estate, including maintenance, insurance, and property taxes, must also be captured. We estimate a 1%
+annual cost for maintenance and insurance. As property taxes vary greatly, we do not attempt to prescribe
+a figure here, but users should be sure to include them based on their circumstances. A 1% expected real
+return, less maintenance and property taxes (not to mention the opportunity cost of home equity) may make
+housing look like a poor investment. However, it is essential to remember that the owner receives imputed
+rent as a benefit.
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+4
+
+Haurin & Zhou (2010) documents the idiosyncratic volatility of individual homes from 1985 to 2003, and Peng
+& Thibodeau (2016) cover the periods from 1996 to 2000, 2001 to 2007, and 2007 to 2012. We calculate an
+average from these studies and add it to the general Canadian market volatility to obtain an estimate of 15%
+for the volatility of Canadian homes, as documented in Table 2 below.
+
+Table 2 - Canadian Individual Home Volatility Estimate
+Canadian Market Volatility Estimate (12/2004 - 11/2024)
+
+4.5%
+
+Plus: Idiosyncratic Volatility:
+Haurin & Zhou (1985-2003)
+
+13.1%
+
+Peng & Thibodeau (1996-2000)
+
+9.4%
+
+Peng & Thibodeau (2001-2007)
+
+7.9%
+
+Peng & Thibodeau (2007-2012)
+
+11.5%
+
+Average
+
+10.5%
+
+10.5%
+15.0%
+
+Total Volatility
+
+Source: PWL Capital; Data Sources: Haurin and Zhou, Peng and Thibodeau, Federal Reserve Bank of Saint-Louis, Teranet/National Bank
+
+4. Expected Cost of Borrowing
+Like our methodology for estimating the expected return of fixed-income assets, we estimate the expected
+cost of borrowing from a combination of MBER and ECOC for five-year fixed-rate mortgages and secured and
+unsecured personal lines of credit. Our results are summarized in Table 3.
+
+Table 3 - Expected Cost of Borrowing
+W1
+
+Nominal
+MBER
+
+W2
+
+Nominal
+ECOC
+
+Expected Cost of
+Borrowing
+
+Five-Year Mortgage - Fixed rate
+
+75%
+
+4.65%
+
+25%
+
+4.76%
+
+4.68%
+
+Personal Line of Credit - Secured
+
+15%
+
+5.23%
+
+85%
+
+5.34%
+
+5.33%
+
+Personal Line of Credit - Unsecured
+
+15%
+
+8.96%
+
+85%
+
+8.46%
+
+8.54%
+
+Source: PWL Capital; Data Sources: Statistics Canada, Bank of Canada, Bloomberg, BMO Global Asset Management
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+5
+
+5. Asset Class Expected Returns
+We estimate asset class expected returns with a weighted average of the Market-Based Expected Return
+(MBER) and the Equilibrium Cost of Capital (ECOC). The MBER is an estimate of expected returns based on
+current market condition metrics. The ECOC estimates expected returns based on more than 120 years of
+global asset class return historical data. The weighting of each component is derived from the statistical
+explanatory power of the MBER. Empirical evidence suggests that the MBER has a high explanatory power for
+fixed income and a relatively low (but significant) explanatory power for equity and cash instruments.
+For each asset class, we attribute a weight “W1” to the MBER and the balance of the attribution “W2” to
+the ECOC to obtain gross nominal asset class returns. We then subtract product MERs to obtain the net
+nominal expected return. We use DFA F-class mutual fund MERs as our product fee assumption to factortilted portfolios. The corresponding funds to each asset class are outlined in the section “Composition of Asset
+Class Returns.”
+
+Table 4 - Asset Class Expected Returns1
+
+W2
+
+Nominal
+ECOC
+
+Nominal
+Expected
+Return Gross of
+fees
+
+MER
+
+Nominal
+Expected
+Return Net of fees
+
+Asset Class
+
+W1
+
+Nominal
+MBER
+
+Cash
+
+15%
+
+3.14%
+
+85%
+
+2.99%
+
+3.01%
+
+0.00%
+
+3.01%
+
+Fixed Income Factor-Tilted
+
+75%
+
+3.47%
+
+25%
+
+3.82%
+
+3.56%
+
+0.28%
+
+3.27%
+
+Canadian Equity Factor-Tilted
+
+25%
+
+7.73%
+
+75%
+
+7.88%
+
+7.84%
+
+0.24%
+
+7.58%
+
+US Equity - FactorTilted
+
+25%
+
+5.75%
+
+75%
+
+7.79%
+
+7.28%
+
+0.24%
+
+7.02%
+
+International Equity
+DV & EM - FactorTilted
+
+25%
+
+9.90%
+
+75%
+
+7.68%
+
+8.24%
+
+0.40%
+
+7.81%
+
+Global Equity Factor-Tilted
+
+25%
+
+7.29%
+
+75%
+
+7.79%
+
+7.67%
+
+0.30%
+
+7.34%
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+1
+
+“Global Equity” comprises 31.5% Canadian equity, with the balance allocated to US and international equity on a market cap-weighted basis. The weightings
+of the DFA Global Equity Fund are used as a guide.
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+6
+
+6. Expected Standard Deviations
+Asset class standard deviations are estimated using a simple average of the 5-year and 20-year historical
+standard deviations.
+
+Table 5 - Estimated Volatility of Major Asset Classes
+Five-year Standard
+Deviation
+
+20-year Standard
+Deviation
+
+Estimated Standard
+Deviation
+
+Fixed Income - Factor-Tilted
+
+4.09%
+
+2.83%
+
+3.46%
+
+Canadian Equity - Factor Tilted
+
+20.68%
+
+16.16%
+
+18.42%
+
+US Equity - Factor Tilted
+
+19.97%
+
+15.87%
+
+17.92%
+
+International Equity - Factor Tilted
+
+15.57%
+
+14.90%
+
+15.23%
+
+Asset Class
+
+Source: PWL Capital; Data Source: Morningstar
+
+7. Expected Correlations
+Asset class correlations are estimated using a simple 5-year- and 20-year historical data average.
+
+Table 6 - Correlation Estimates
+Fixed Income Factor-Tilted
+
+Canadian Equity Factor-Tilted
+
+US Equity Factor-Tilted
+
+International
+Equity - FactorTilted
+
+Fixed Income - Factor-Tilted
+
+1.00
+
+0.26
+
+0.32
+
+0.33
+
+Canadian Equity - Factor-Tilted
+
+0.26
+
+1.00
+
+0.85
+
+0.85
+
+US Equity - Factor-Tilted
+
+0.32
+
+0.85
+
+1.00
+
+0.85
+
+International Equity - Factor-Tilted
+
+0.33
+
+0.85
+
+0.85
+
+1.00
+
+Source: PWL Capital; Data Source: Morningstar
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+7
+
+8. Composition of Asset Class Returns
+The composition of asset class returns, primarily consisting of the mix of capital appreciation, interest income
+and dividends, is essential for financial planning. The tax liability in taxable and non-taxable accounts (due to
+foreign withholding tax) will hinge on the portion of returns assumed to be coming from interest, Canadian
+and foreign dividends, and realized and unrealized capital gains.
+To determine the composition of asset class returns, we proceed as follows:
+• Establish one or more mutual funds or ETFs representing the passive benchmark for each asset class.
+• For fixed income, the average distribution yield is assumed to be the lowest of the underlying fund’s
+current yield and the asset class expected return. Distributions are assumed to be 100% interest
+income.
+• For Canadian equity, fund distributions are assumed to be 100% Canadian dividends.
+• For US and international equity, fund distributions are assumed to be 100% foreign dividends.
+• The balance of expected returns (net of distribution yields) is treated as capital gains.
+• We assume a 90%/10% split between unrealized and realized capital gains.
+We use the following funds to estimate the composition of asset class returns:
+Fixed income: 100% DFA Global Fixed Income F (DFA916)
+Canadian equity: 70% DFA Canadian Core Equity F (DFA256) and 30% DFA Canadian Vector Equity F (DFA600)
+US Equity: 70% DFA US Core Equity F (DFA293) and 30% DFA US Vector Equity F (DFA223)
+International Equity: 70% DFA International Core Equity F (DFA295) and 30% DFA International Vector Equity
+F (DFA227)
+Our estimates for the composition of expected returns are illustrated in Table 7. This data is reproduced in a
+NaviPlan-compatible format in the Appendix.
+
+Table 7 - Composition of Expected Asset Class Returns
+Expected
+Return
+
+Current
+Yield
+
+Interest
+& Foreign
+Dividends
+
+Canadian
+Dividends
+
+Realized
+Capital Gains
+
+Unrealized
+Capital Gains
+
+Fixed Income - FactorTilted
+
+3.27%
+
+4.08%
+
+3.27%
+
+0.00%
+
+0.00%
+
+0.00%
+
+Canadian Equity - FactorTilted
+
+7.58%
+
+2.79%
+
+0.00%
+
+2.79%
+
+0.48%
+
+4.31%
+
+US Equity - Factor Tilted
+
+7.02%
+
+1.08%
+
+1.08%
+
+0.00%
+
+0.59%
+
+5.35%
+
+International Equity Factor Tilted
+
+7.81%
+
+2.74%
+
+2.74%
+
+0.00%
+
+0.51%
+
+4.56%
+
+Asset Class
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+8
+
+9. Portfolio Expected Returns
+To simplify the practical application of the information presented in this paper, Table 8 shows expected
+returns, standard deviations, and return composition for portfolios consisting of various mixes between
+stocks and bonds.
+
+Table 8 - Portfolio Expected Returns
+ESTIMATED RETURN COMPOSITION
+Asset Mix
+(Equity/Bond)
+
+Expected
+Return
+
+Expected
+Standard
+Deviation
+
+Interest
+& Foreign
+Dividends
+
+Canadian
+Dividends
+
+Realized
+Capital Gains
+
+Unrealized
+Capital Gains
+
+0/100
+
+3.27%
+
+3.46%
+
+3.27%
+
+0.00%
+
+0.00%
+
+0.00%
+
+5/95
+
+3.54%
+
+3.64%
+
+3.17%
+
+0.05%
+
+0.03%
+
+0.28%
+
+10/90
+
+3.80%
+
+3.98%
+
+3.06%
+
+0.10%
+
+0.06%
+
+0.57%
+
+15/85
+
+4.05%
+
+4.43%
+
+2.95%
+
+0.16%
+
+0.09%
+
+0.85%
+
+20/80
+
+4.30%
+
+4.97%
+
+2.84%
+
+0.21%
+
+0.12%
+
+1.13%
+
+25/75
+
+4.54%
+
+5.57%
+
+2.73%
+
+0.26%
+
+0.16%
+
+1.40%
+
+30/70
+
+4.78%
+
+6.22%
+
+2.62%
+
+0.31%
+
+0.19%
+
+1.67%
+
+35/65
+
+5.01%
+
+6.89%
+
+2.50%
+
+0.36%
+
+0.21%
+
+1.94%
+
+40/60
+
+5.24%
+
+7.59%
+
+2.39%
+
+0.40%
+
+0.24%
+
+2.20%
+
+45/55
+
+5.46%
+
+8.30%
+
+2.28%
+
+0.45%
+
+0.27%
+
+2.46%
+
+50/50
+
+5.67%
+
+9.03%
+
+2.16%
+
+0.50%
+
+0.30%
+
+2.71%
+
+55/45
+
+5.88%
+
+9.77%
+
+2.05%
+
+0.54%
+
+0.33%
+
+2.96%
+
+60/40
+
+6.08%
+
+10.52%
+
+1.94%
+
+0.59%
+
+0.35%
+
+3.20%
+
+65/35
+
+6.28%
+
+11.27%
+
+1.83%
+
+0.63%
+
+0.38%
+
+3.44%
+
+70/30
+
+6.47%
+
+12.03%
+
+1.72%
+
+0.67%
+
+0.41%
+
+3.67%
+
+75/25
+
+6.66%
+
+12.79%
+
+1.62%
+
+0.71%
+
+0.43%
+
+3.89%
+
+80/20
+
+6.84%
+
+13.56%
+
+1.51%
+
+0.75%
+
+0.46%
+
+4.12%
+
+85/15
+
+7.01%
+
+14.32%
+
+1.41%
+
+0.79%
+
+0.48%
+
+4.33%
+
+90/10
+
+7.18%
+
+15.09%
+
+1.31%
+
+0.83%
+
+0.50%
+
+4.54%
+
+95/5
+
+7.35%
+
+15.87%
+
+1.20%
+
+0.87%
+
+0.53%
+
+4.75%
+
+100/0
+
+7.51%
+
+16.64%
+
+1.11%
+
+0.91%
+
+0.55%
+
+4.95%
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+9
+
+Appendix: Financial Planning Assumptions –
+Naviplan Input Format
+Table 9 - Composition of Asset Class Returns (NaviPlan format)
+Interest
+
+Fixed Income Factor-Tilted
+
+Dividends
+
+3.27%
+
+Canadian Equity Factor-Tilted
+
+2.79%
+
+Capital Gains
+
+Deferred
+Growth
+
+Total
+
+Standard
+Deviation
+
+0.00%
+
+0.00%
+
+3.27%
+
+3.46%
+
+0.48%
+
+4.31%
+
+7.58%
+
+18.42%
+
+US Equity - Factor Tilted
+
+1.08%
+
+0.59%
+
+5.35%
+
+7.02%
+
+17.92%
+
+International Equity Factor Tilted
+
+2.74%
+
+0.51%
+
+4.56%
+
+7.81%
+
+15.23%
+
+Fixed Income - MCW
+
+3.20%
+
+0.04%
+
+0.35%
+
+3.59%
+
+5.63%
+
+0.43%
+
+3.83%
+
+7.04%
+
+16.21%
+
+2.78%
+
+Canadian Equity - MCW
+
+US Equity - MCW
+
+0.93%
+
+0.55%
+
+4.97%
+
+6.46%
+
+15.30%
+
+International Equity MCW
+
+2.52%
+
+0.49%
+
+4.43%
+
+7.44%
+
+13.23%
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+10
+
+Table 10 - Correlations (NaviPlan format)
+Fixed
+Income
+- Factor
+Tilted
+
+Canadian
+Equity
+- Factor
+Tilted
+
+US Equity
+- Factor
+Tilted
+
+International
+Equity Factor Tilted
+
+Fixed
+Income MCW
+
+Canadian
+Equity MCW
+
+US Equity
+- MCW
+
+International
+Equity - MCW
+
+Fixed Income Factor Tilted
+
+1.00
+
+0.26
+
+0.32
+
+0.33
+
+0.98
+
+0.35
+
+0.41
+
+0.45
+
+Canadian Equity Factor Tilted
+
+0.26
+
+1.00
+
+0.85
+
+0.85
+
+0.28
+
+0.97
+
+0.68
+
+0.73
+
+US Equity - Factor
+Tilted
+
+0.32
+
+0.85
+
+1.00
+
+0.85
+
+0.35
+
+0.87
+
+0.91
+
+0.78
+
+International Equity Factor Tilted
+
+0.33
+
+0.85
+
+0.85
+
+1.00
+
+0.34
+
+0.84
+
+0.73
+
+0.94
+
+Fixed Income - MCW
+
+0.98
+
+0.28
+
+0.35
+
+0.34
+
+1.00
+
+0.38
+
+0.45
+
+0.45
+
+Canadian Equity MCW
+
+0.35
+
+0.97
+
+0.87
+
+0.84
+
+0.38
+
+1.00
+
+0.74
+
+0.75
+
+US Equity - MCW
+
+0.41
+
+0.68
+
+0.91
+
+0.73
+
+0.45
+
+0.74
+
+1.00
+
+0.76
+
+International Equity
+- MCW
+
+0.45
+
+0.73
+
+0.78
+
+0.94
+
+0.45
+
+0.75
+
+0.76
+
+1.00
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+11
+
+Table 11 - Portfolio Asset Mixes
+Asset Mix (Equity/
+Bond)
+
+Fixed Income – Factor
+Tilted
+
+Canadian Equity –
+Factor Tilted
+
+US Equity – Factor
+Tilted
+
+International Equity –
+Factor Tilted
+
+0/100
+
+100.00%
+
+0.00%
+
+0.00%
+
+0.00%
+
+5/95
+
+95.00%
+
+1.58%
+
+2.32%
+
+1.10%
+
+10/90
+
+90.00%
+
+3.16%
+
+4.64%
+
+2.21%
+
+15/85
+
+85.00%
+
+4.73%
+
+6.96%
+
+3.31%
+
+20/80
+
+80.00%
+
+6.31%
+
+9.28%
+
+4.41%
+
+25/75
+
+75.00%
+
+7.89%
+
+11.60%
+
+5.52%
+
+30/70
+
+70.00%
+
+9.47%
+
+13.91%
+
+6.62%
+
+35/65
+
+65.00%
+
+11.05%
+
+16.23%
+
+7.72%
+
+40/60
+
+60.00%
+
+12.62%
+
+18.55%
+
+8.82%
+
+45/55
+
+55.00%
+
+14.20%
+
+20.87%
+
+9.93%
+
+50/50
+
+50.00%
+
+15.78%
+
+23.19%
+
+11.03%
+
+55/45
+
+45.00%
+
+17.36%
+
+25.51%
+
+12.13%
+
+60/40
+
+40.00%
+
+18.94%
+
+27.83%
+
+13.24%
+
+65/35
+
+35.00%
+
+20.51%
+
+30.15%
+
+14.34%
+
+70/30
+
+30.00%
+
+22.09%
+
+32.47%
+
+15.44%
+
+75/25
+
+25.00%
+
+23.67%
+
+34.79%
+
+16.55%
+
+80/20
+
+20.00%
+
+25.25%
+
+37.10%
+
+17.65%
+
+85/15
+
+15.00%
+
+26.83%
+
+39.42%
+
+18.75%
+
+90/10
+
+10.00%
+
+28.40%
+
+41.74%
+
+19.85%
+
+95/5
+
+5.00%
+
+29.98%
+
+44.06%
+
+20.96%
+
+100/0
+
+0.00%
+
+31.56%
+
+46.38%
+
+22.06%
+
+Source: PWL Capital; Data Sources: Bloomberg, Morningstar, Robert Shiller, Elroy Dimson, Paul Marsh and Mike Staunton, Triumph of the Optimists: 101
+Years of Global Investment Returns, Princeton University Press, 2002; Elroy Dimson, Paul Marsh and Mike Staunton, Credit Suisse Global Returns Yearbook
+and Sourcebook, 2018, Zurich: Credit Suisse Research Institute, 2021
+
+Financial Planning Assumptions (Factor-Tilted Portfolio)
+Year-end 2024
+
+12
+
+www.pwlcapital.com
+info@pwlcapital.com
+
+PWL Montreal
+3400 de Maisonneuve O.
+Suite 1501
+Montreal, Quebec
+H3Z 3B8
+
+PWL Ottawa
+265 Carling Avenue,
+8th Floor,
+Ottawa, Ontario
+K1S 2E1
+
+PWL Toronto
+8 Wellington Street East
+3rd Floor
+Toronto, Ontario
+M5E 1C5
+
+T 514.875.7566
+1-800.875.7566
+F 514.875.9611
+
+T 613.237.5544
+1-800.230.5544
+F 613.237.5949
+
+T 416.203-0067
+1-866.242-0203
+F 416.203-0544
+
+Portfolio Management and brokerage services are offered by PWL Capital Inc., which is
+regulated by Canadian Investment Regulatory Organization (CIRO), and is a member of the
+Canadian Investor Protection Fund (CIPF).
+Financial planning and insurance products are offered by PWL Advisors Inc., and is regulated
+in Ontario by Financial Services Regulatory Authority of Ontario (FSRA) and in Quebec by the
+Autorité des marchés financiers (AMF). PWL Advisors Inc. is not a member of CIPF.
+
+

@@ -1,0 +1,2228 @@
+Five Factor
+Investing with
+ETFs
+Benjamin Felix MBA, CFA, CIM, CFP
+Portfolio Manager
+PWL Capital Inc.
+
+Ottawa, Ontario
+December 2020
+
+This report was written by Benjamin Felix, PWL Capital Inc. The ideas, opinions, and
+recommendations contained in this document are those of the author and do not necessarily
+represent the views of PWL Capital Inc.
+© PWL Capital Inc.
+All rights reserved. No part of this publication may be reproduced without prior written approval of
+the author and/or PWL Capital. PWL Capital would appreciate receiving a copy of any publication or
+material that uses this document as a source. Please cite this document as:
+Benjamin Felix, Portfolio Manager, PWL Capital Inc.,“Five Factor Investing with ETFs”
+For more information about this or other publications from PWL Capital, contact:
+PWL Capital – Passmore, 265 Carling Avenue, 8th Floor, Ottawa, ON K1S 2E1
+Tel 613-237-5544 • 1-800-230-5544
+
+Fax 613-237-5949
+
+ottawa@pwlcapital.com
+
+This document is published by PWL Capital Inc. for your information only. Information on which this document is based is
+available on request. Particular investments or trading strategies should be evaluated relative to each individual’s objectives, in
+consultation with the Investment Advisor. Opinions of PWL Capital constitute its judgment as of the date of this publication, are
+subject to change without notice and are provided in good faith but without responsibility for any errors or omissions contained
+herein. This document is supplied on the basis and understanding that neither PWL Capital Inc. nor its employees, agents or
+information suppliers is to be under any responsibility of liability whatsoever in respect thereof.
+
+Table of Contents
+1. Introduction
+
+4
+
+2. Expected Stock Returns
+
+5
+
+2.1 Asset Pricing Models
+
+5
+
+2.2 Market Beta: The Original Factor
+
+5
+
+2.3 The Fama-French Three-Factor Model
+
+6
+
+2.4 The Fama-French Five Factor-Model
+
+7
+
+2.5 Company Size
+
+8
+
+2.6 Momentum
+
+9
+
+3. Historical Factor Premiums
+
+10
+
+3.1 Defining a Factor Premium
+
+10
+
+3.2 US Data
+
+11
+
+3.3 Developed Ex-US Data
+
+12
+
+3.4 Emerging Markets Data
+
+12
+
+3.5 The (un)Reliability of SMB
+
+12
+
+4. Explaining Differences in Returns
+
+13
+
+4.1 A Multifactor Index
+
+13
+
+4.2 Dividend Growth Investing
+
+14
+
+5. Persistence of the Premiums
+
+16
+
+5.1 Rolling Historical Periods
+
+16
+
+5.2 Waiting for the Premiums
+
+18
+
+6. Five-Factor Investing with ETFs
+
+21
+
+6.1 Product Availability
+
+21
+
+6.2 Approach to Obtaining Factor Exposure
+
+21
+
+6.3 Avantis ETFs
+
+22
+
+7. Proposed Equity Model Portfolio
+
+25
+
+Appendix A – Model Portfolio Performance Methodology
+
+26
+
+Appendix B - Backtest data and Index Methodologies
+
+27
+
+Appendix C - Foreign Withholding Tax
+
+28
+
+References
+
+29
+
+The Author
+
+30
+
+PAGE 3
+Five Factor Investing with ETFs
+
+1.
+
+Introduction
+Index funds are an increasingly popular and undoubtedly sensible tool for building investment
+portfolios. The push toward index investing is based on the Efficient Market Hypothesis (EMH) (Fama,
+1970), which simply states:
+In general terms, the ideal is a market in which prices provide accurate signals for resource
+allocation: that is, a market in which firms can make production-investment decisions, and
+investors can choose among securities that represent ownership of firms’ activities under the
+assumption that security prices at any time “fully reflect” all available information. A market in
+which prices always “fully reflect” available information is called “efficient.”
+If the market is efficient then prices contain all relevant information about the expected returns of a
+stock at that point in time. Price changes will be based on new information, which cannot be predicted
+reliably. In an efficient market it is not possible to earn reliable excess returns without taking on excess
+risk. Excess returns without excess risk, known as alpha, is the goal of traditional active management.
+Active management involves some combination of selecting a subset of stocks and timing the market
+to generate alpha.
+The consistent failure of active management to generate persistent alpha, as documented by
+Carhartt (1997) and Fama and French (2010), supports market efficiency. As investors have become
+increasingly aware of the empirical failure of active management, and its theoretical implications, they
+have rightfully shifted their dollars toward low-cost broadly diversified index funds. This shift is sensible
+given the pervasive evidence of market efficiency.
+We would stop here to arrive at the conclusion that index investing is the smartest way for most people
+to invest. If it is nearly impossible to consistently generate returns in excess of those associated with
+taking on risk, then it is sensible to minimize costs and maintain long-term exposure to known risks.
+Index investing using a market capitalization weighted index fund, like the iShares ETF XIC tracking the
+S&P/TSX Composite index for Canadian stocks, offers low-cost exposure to market risk.
+Since the introduction of the EMH as a falsifiable model in the mid-1960s, the field of asset pricing has
+revealed other theoretically consistent and empirically robust risks that systematically affect asset prices,
+independent of market risk. This is where an evidence-motivated investor may choose to diverge from
+the basic concept of market capitalization weighted index investing. Rather than taking on only market
+risk, it may be sensible to pursue long-term exposure to a combination of independent risks.
+Considering the increasing correlations of global stock markets, exposure to multiple risk factors may
+be even more beneficial than exposure to the stock markets of multiple countries. Combining risk
+factor diversification with geographical diversification will provide investors with greater diversification
+benefits than market capitalization weighted index funds alone. This paper will introduce the risk factors
+included in a prominent asset pricing model, the Fama French Five-Factor Model, and the empirical
+case to include exposure to these risk factors in portfolios. We will propose a model portfolio of ETFs
+that aims to achieve exposure to all five independent risk factors.
+
+PAGE 4
+Five Factor Investing with ETFs
+
+2.
+
+Expected Stock Returns
+Investing in a company’s stock means purchasing the rights to a portion of that company’s expected
+future profits. The expected future profits are not guaranteed, so they are purchased at a discount.
+If things work out as expected for the company then the shares deliver their portion of the expected
+profits; the investment return is the difference between the discounted price paid for the expected profits
+and the actual profits that accrue to the shares. That last sentence is extremely important: Expected
+stock returns are not dictated by the profits that a company generates - they are dictated by the amount
+that was paid for those profits. Investors will be willing to pay less for riskier future profits and more for
+safer future profits. The documented relationship between risk and expected returns goes back to the
+Capital Asset Pricing Model (CAPM) (Sharpe, 1964), the first asset pricing model.
+
+2.1
+
+Asset Pricing Models
+In an efficient market asset prices fully reflect available information. Market efficiency is a theoretical
+model, but it has stood the test of time as the best model that we have to understand how the financial
+markets operate. If we accept that prices reflect all available information, then prices can be used to gain
+insight into differences in expected returns between securities. Since the CAPM in 1964 there has been
+an overwhelming amount of research conducted on asset pricing resulting in hundreds of documented
+risk factors – independent risks that may contribute to the explanation of differences in expected returns.
+Before going any further, it is important to note that asset pricing models do not prove or disprove market
+efficiency. This must be true because any test of market efficiency using an asset pricing model is jointly
+a test of market efficiency and a test of the asset pricing model - this is known as the joint hypothesis
+problem. If an asset pricing model suggests that the market is not incorporating information into prices
+it is impossible to say whether the market is inefficient, or the model is wrong. One of the most obvious
+historical cases of the joint hypothesis problem in action is the empirical failure of the CAPM.
+
+2.2
+
+Market Beta: The Original Factor
+Any discussion on asset pricing must start with market beta. Market beta is market risk as described
+by the CAPM. The CAPM looks at the measure of sensitivity between an asset or portfolio and the
+risk of the overall market. A market capitalization weighted equity index fund should have a market
+beta of 1. A Portfolio consisting of 50% market cap weighted equity index fund and 50% cash
+should have a market beta of 0.5. If the market goes up 10%, the portfolio with a beta of 1 would be
+expected to go up 10%, while the portfolio with a beta of 0.5 would be expected to go up 5%.
+If two portfolios with the same beta had different returns, the difference in returns could be attributed
+to the portfolio manager’s ability to select securities and time the market, or to some as-yet
+unidentified factor. A portfolio that delivers returns higher than expected based on its level of risk is
+desirable. That excess risk-adjusted return is known as alpha; alpha is the holy grail of investing. The
+CAPM was the foundation of asset pricing models – the first model to relate a measure of risk to
+expected returns – but it is a severely flawed model. The CAPM is only able to explain about twothirds of the differences in returns between diversified portfolios.
+PAGE 5
+Five Factor Investing with ETFs
+
+The CAPM was first shown to be flawed in Fischer Black’s 1972 paper Capital Market Equilibrium
+with Restricted Borrowing. Rolf Banz followed up with his 1981 paper The Relationship Between
+Return and Market Value of Common Stocks. Banz showed that small stocks had consistently higher
+average returns that could not be explained by their market beta. In other words, viewed through the
+CAPM lens, small stocks were generating persistent alpha. The CAPM took another blow in 1985
+when Barr Rosenberg, Kenneth Reid, and Ronald Lanstein found that stocks with a high book value
+relative to their market price (value stocks) had higher average returns that were not explained by
+market beta. Their paper Persuasive Evidence of Market Inefficiency was further evidence that market
+beta does not tell the full expected stock returns story.
+Their findings, at the time, seemed to be proof that markets were not efficient. If some types of stocks
+could have consistently higher returns without any additional risk, then the market is mispricing those
+types of stocks. If that is in fact the case then markets are, by definition, not efficient. However, we
+must remember the joint hypothesis theorem: a test of market efficiency using an asset pricing model
+is jointly a test of market efficiency and a test of the asset pricing model. Was the market inefficient, or
+did we need a better model?
+
+2.3
+
+The Fama-French Three-Factor Model
+In 1992, Eugene Fama and Kenneth French pulled together the empirical anomalies that had
+apparently been disproving the EMH and offered an alternative asset pricing model. They showed that
+with a better model the market was not mispricing small cap and value stocks, it was pricing in the
+independent risks of those types of stocks. Adding in the independent risks of small and value stocks
+alongside market beta in the asset pricing model significantly increased the explanatory power of the
+model and eliminated the empirical anomalies that had been making the market look inefficient from a
+CAPM perspective.
+Instead of explaining two-thirds of the difference in returns between diversified portfolios the threefactor model explains 90% of the difference. While it was a big leap forward, the Three-Factor
+model is an empirical model without strong roots in financial theory. Fama and French had taken the
+empirical observation that market risk was not sufficient to explain the returns of small cap and value
+stocks and proposed a model with better explanatory power. The model still has known imperfections
+and is only loosely tied to valuation theory.
+Later research by Robert Novy-Marx (2013) and Titman, Wei, and Xie (2004) showed persistent
+anomalies unexplained by the Three-Factor model: profitability and investment. Controlling for size
+and relative price, firms with robust operating profitability tend to perform better than firms with weak
+operating profitability, and firms with conservative asset growth tend to perform better than firms
+with aggressive asset growth. These empirical anomalies caused financial economists to revisit the
+Three-Factor model. Adding profitability and investment to the Three-Factor model not only increased
+the explanatory power of the model, it brought the empirical asset pricing work closer in line with
+valuation theory.
+
+PAGE 6
+Five Factor Investing with ETFs
+
+2.4
+
+The Fama-French Five Factor-Model
+The dividend discount model says that the theoretical value of a share of stock is the discounted
+value of expected dividends per share.
+mt =
+
+∞
+
+∑ E(d t+τ )⁄(1+r) τ
+
+(1)
+
+τ�1
+
+Equation 1 shows that the stock price m t at time t is equal to the expected future dividends per
+
+share, E(d t+τ ), discounted at the long-term average expected stock return r.
+
+One of the problems with the dividend discount model is that not all firms pay dividends. Miller and
+Modigliani (1961) showed that given investment policy, dividend policy is irrelevant to the valuation
+of shares. With dividend policy irrelevance, the value of expected dividends is equal to expected
+earnings minus expected investment. According to Miller and Modigliani (1961), the total market value
+of the firm’s stock is given by Equation 2
+Mt =
+
+∞
+
+∑ E(Y t+τ - dB t+τ )⁄(1+r) τ
+
+(2)
+
+τ�1
+
+here Y t+τ is the earnings and dB t+τ is the expected change in book equity (asset growth). Scaling
+
+both sides of Equation 2 by the book value of equity, B t , Equation 3 gives the theoretical valuation
+equation as presented by Fama and French (2015).
+
+∞
+E(Y t+τ - dB t+τ )⁄(1+r) τ
+M t ∑ τ=1
+=
+Bt
+Bt
+
+(3)
+
+This theoretical valuation equation makes three statements about expected stock returns.
+1. If we hold everything in Equation 3 constant except for the market value of the stock, M t , and
+
+the expected stock return, r, then a lower ratio of M t ⁄B t must imply a higher expected stock
+
+return. All else equal, a company with a lower price must have a higher discount rate.
+
+2. If we hold everything in Equation 3 constant except for expected future earnings, Y t+τ , and
+the expected stock return, r, then higher expected earnings must imply a higher expected
+stock return. All else equal, if two companies trade at the same price, the company with
+higher profits must have a higher discount rate. This is an expression of the profitability
+premium.
+3. If we hold everything in Equation 3 constant except for the expected growth in book value
+
+of equity, dB t+τ , and the expected stock return, r, then higher expected asset growth must
+
+imply a lower expected stock return. All else equal, if two companies trade at the same price,
+the company with higher investment must have a lower discount rate. This is an expression of
+the investment premium.
+
+PAGE 7
+Five Factor Investing with ETFs
+
+Measuring expected profitability and expected investment had been a challenge for many years.
+In 2012, Robert Novy-Marx documented the finding that profitability, measured by gross profitsto-assets, adds further explanatory power to asset pricing models. He found that controlling for
+gross profitability explains most earnings-related anomalies that the Three-Factor model had been
+unable to explain. In 2013, Aharoni, Grundy, and Zeng documented a weaker but statistically reliable
+relationship between asset growth and average returns. They found that firms with aggressive
+investment policies, as measured by the growth in the book value of their assets, tend to have lower
+average returns.
+Informed by the theoretical valuation equation and the advances in measuring expected profitability
+and expected investment, Fama and French proposed a five-factor asset pricing model in their 2015
+paper A Five-Factor Asset Pricing Model. The five factors include market beta, company size, relative
+price, gross profitability, and investment. The Five-Factor model is able to explain closer to 95% of the
+differences in returns between diversified portfolios, and it is able to solve many of the anomalies left
+unexplained by the Three-Factor model.
+One of the most important insights that we gain from the valuation equation is that the factors should
+not be considered in isolation. For example, a portfolio that focuses on profitability without controlling
+for relative price is likely to result in a portfolio of growth stocks, and a portfolio that focuses on relative
+price without controlling for profitability is likely to result in a portfolio of stocks with weak profitability.
+Novy-Marx (2014) argues that buying stocks with robust profitability without paying premium prices
+is just as much value investing as buying average profitability assets at discount prices. The stocks
+with the highest expected returns in the market would tend to be the stocks with low relative prices
+and robust profitability. This makes targeting value and profitability jointly one of the most important
+aspects of managing a multi-factor portfolio.
+
+2.5
+
+Company Size
+Company size was the original pricing anomaly. Interestingly, company size does not make an
+explicit appearance in the theoretical valuation equation, and the standalone size premium has not
+been statistically different from zero since publication of the effect by Banz (1981). It would be easy
+to dismiss the inclusion of small cap stocks based on this information, but that would ignore one
+of the other empirical realities: other factor premiums are much stronger in small cap stocks. Blitz
+and Hanauer (2021) show empirically that there are powerful interaction effects between size and
+other factors, such as value. They show that academic factor portfolios, which consist of 50% large
+caps and 50% small caps, have significant alphas compared to factor portfolios constructed with
+90% large caps and 10% small caps representing market capitalization weights. The conclusion is
+that the interaction between size and other known factors may be a sufficient reason for long-only
+investors to systematically overweight small-cap stocks, even if the size characteristic itself is not
+rewarded with a premium.
+
+PAGE 8
+Five Factor Investing with ETFs
+
+2.6
+
+Momentum
+While the five factors in the Fama-French Five-Factor model fit nicely into a theoretical valuation
+framework, momentum continues to be an unexplained anomaly, at least from an EMH perspective.
+Momentum was first documented by Jegadeesh and Titman in their 1993 study Returns to Buying
+Winners and Selling Losers: Implications for Stock Market Efficiency. It is the observed phenomenon
+that stocks which have been increasing in price recently tend to continue increasing in price for a
+short time, and stocks that have been decreasing in price tend to continue decreasing in price for a
+short time.
+In 1997 Mark Carhart combined the Fama-French Three-Factor model with momentum to create a
+four-factor model. Adding momentum to the Three-Factor model further increased its explanatory
+power. There are theoretical explanations from behavioral finance for the excess returns of stocks
+with positive momentum. From a portfolio management perspective momentum is important when
+considering a value strategy. Value stocks are stocks that have decreased in price to become value
+stocks. Purchasing value stocks as they cross the value threshold ends up being a bet against
+positive price momentum.
+
+PAGE 9
+Five Factor Investing with ETFs
+
+3.
+
+Historical Factor Premiums
+Factors are characteristics that explain differences in returns between diversified portfolios. As seen
+in the valuation equation they also have a theoretical relationship with expected returns. Small cap
+and value stocks broke the CAPM because they had higher average returns than expected based on
+their market betas. Stocks with robust profitability and stocks that invest conservatively had a similar
+impact on the Three-Factor model.
+As we will see, the higher average returns associated with all five factors in the Fama-French FiveFactor model have been persistent through time and pervasive across markets.
+
+3.1
+
+Defining a Factor Premium
+Factors are technically defined as a portfolio that is long one group of assets and short another. The
+market factor is the portfolio that is long the stock market and short one-month US treasury bills. The
+size premium is the portfolio that is long small stocks and short large stocks. Mathematically, it is the
+return of small stocks minus the return of big stocks; that is how the size factor gets the name small
+minus big (SMB). The value factor is defined as the returns of high book-to-market stocks minus low
+book-to-market stocks, or high minus low (HML). The profitability factor is firms with robust profitability
+minus firms with weak profitability, or robust minus weak (RMW). The investment factor is firms that
+invest conservatively minus firms that invest aggressively, or conservative minus aggressive (CMA).
+Aggressive investment is also referred to as aggressive asset growth.
+The academic factors are designed to disentangle the factors from each other. This is accomplished
+by giving the academic factor equal weight contributions from big and small stocks. For example, the
+academic value factor is defined in Equation 4.
+HML =
+
+1
+1
+(Small Value + Big Value)- (Small Growth + Big Growth).
+2
+2
+
+(4)
+
+In the context of assessing the existence of a single factor premium these academic factors may be
+less relevant because the market portfolio has closer to a 10% value weight in small stocks and a
+
+90% value weight in big stocks. Interestingly, Blitz and Hanauer (2021) compare the academic factor
+portfolios to value weighted factor portfolios to demonstrate the additional excess return associated
+with over-weighting small caps to increase the effectiveness of other factors. A market capitalization
+weighted investor with a factor tilt toward value, high profitability, or low asset growth might be more
+interested in the value weighted factor premiums, while an overweight small cap investor with a factor
+tilt may be more interested in the academic factor premiums. Our model portfolio lands somewhere in
+the middle with a roughly 30% weight in small stocks.
+For the US we will present data on historical premiums using value weighted portfolios in addition to
+the academic factor portfolios to demonstrate the difference in the magnitude of the premiums. Ken
+French publishes US data on value weighted portfolios sorted by each factor. The data are calculated
+as the top and bottom 30% of stocks sorted by each factor. For example, the value premium is
+defined as the portfolio of the cheapest 30% of stocks minus the portfolio of the most expensive
+
+PAGE 10
+Five Factor Investing with ETFs
+
+30%, and the small cap premium is the smallest 30% of stocks minus the largest 30%. These sorts
+are similarly carried out for operating profitability and asset growth.
+While demonstrating the difference in historical premiums between the academic factor portfolios
+and the value weighted factor portfolios is important, the remainder of the paper will focus on the
+academic factors.
+
+3.2
+
+US Data
+The premiums associated with factor portfolios have been significant economically and, for the most
+part, statistically.
+
+Table 1 - US Value Weighted Factor Premiums 7/1/1963 - 6/30/2020
+7/1/1963 - 6/30/2020
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized US Five-Factor Premiums (%)
+
+5.37
+
+1.58
+
+1.99
+
+2.59
+
+1.92
+
+t stat
+
+3.16
+
+1.39
+
+1.80
+
+2.56
+
+1.99
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+Table 2 - US Academic Factor Premiums 7/1/1963 - 6/30/2020
+7/1/1963 - 6/30/2020
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized US Five-Factor Premiums (%)
+
+5.37
+
+2.04
+
+2.68
+
+2.80
+
+2.93
+
+t stat
+
+3.16
+
+1.85
+
+2.39
+
+3.06
+
+3.42
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+These data are showing us that in the value weighted sample the market beat one-month treasury
+bills by an annualized 5.37%, small stocks beat big stocks by 1.58%, cheap stocks beat expensive
+stocks by 1.99%, stocks with robust operating profitability beat stocks with weak operating
+profitability by 2.59%, and stocks with conservative asset growth beat stocks with aggressive asset
+growth by 1.92%. Most of these premiums are statistically significant at the 95% confidence level
+except for the value weighted premiums associated with smaller stocks over larger stocks with a
+t statistic of 1.39 and value stocks over growth stocks with a t statistic of 1.80, and the academic
+premium associated with smaller stocks over larger stocks with a t statistic of 1.85.
+The academic value premium over the full sample is statistically significant, however over the more
+recent sub-sample from 07/1990 through 06/2019 it is not statistically significant. The existence
+of the US value premium has been questioned due to the recent run of historically severe underperformance that it has endured. This was addressed in a 2020 paper by Eugene Fama and Kenneth
+French simply titled The Value Premium. They argue that there is too much noise in the data to
+conclude that the value premium has ceased to exist since its initial publication.
+
+PAGE 11
+Five Factor Investing with ETFs
+
+3.3
+
+Developed Ex-US Data
+The developed ex-US evidence is not as statistically reliable as the US evidence. This may be partially
+explained by a shorter time series of historical data and, for the market minus risk-free rate (MKT-RF)
+premium, the recently poor performance of non-US developed market stocks. In this data set, the
+value and profitability factors generated statistically reliable premiums at the 95% confidence level,
+whereas market, size, and investment factors did not.
+
+Table 3 - ex-US Academic Factor Premiums 7/1/1990 - 6/30/2020
+7/1/1990 - 6/30/2020
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized ex-US Five-Factor Premium (%)
+
+2.40
+
+0.81
+
+3.01
+
+4.30
+
+1.34
+
+t stat
+
+1.25
+
+0.82
+
+2.36
+
+5.00
+
+1.36
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+3.4
+
+Emerging Markets Data
+The emerging markets data similarly display less statistically reliable, though still economically
+meaningful premiums. Here, the value and investment factors provided statistically significant
+premiums to the 95% confidence level, whereas market, size, and profitability factors did not. Again,
+the short time series of historical data should be noted as a likely partial explanation for reduced
+statistical reliability.
+
+Table 4 - Emerging Markets Academic Factor Premiums 7/1/1992 - 6/30/2020
+7/1/1992 - 6/30/2020
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized EM Five-Factor Premium (%)
+
+5.01
+
+0.71
+
+6.67
+
+1.82
+
+2.66
+
+t stat
+
+1.79
+
+0.71
+
+4.57
+
+1.89
+
+2.30
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+3.5
+
+The (un)Reliability of SMB
+An interesting thread through these data, which speaks to the commentary in Section 2.5, is that the
+standalone SMB premium has not been statistically different from zero in any of the regions and time
+periods under examination. However, we know empirically that the other factors have been more
+economically meaningful and statistically reliable in smaller capitalization companies. The important
+implication for index investors is that a small cap index with no other factor loadings would not be
+expected to reliably improve the expected outcome.
+
+PAGE 12
+Five Factor Investing with ETFs
+
+4.
+
+Explaining Differences in Returns
+The long-short factor portfolios can be used to run multiple linear regression analysis in order to
+determine what is driving the performance of a diversified portfolio. Considering the explanatory
+power of the Five-Factor model, we would not expect a substantial portion of returns to be left
+unexplained. Any unexplained portion of a portfolio’s return is alpha.
+
+4.1
+
+A Multifactor Index
+To illustrate the explanatory power of the Five-Factor model we will observe the historical results of the
+Dimensional US Core Equity Index. This is a retrospectively constructed index designed to target US
+securities with an emphasis on companies with smaller capitalization, lower relative price, and higher
+profitability, excluding those with the lowest profitability and highest relative price within the small cap
+universe. The index also excludes those companies with the highest asset growth within the small
+cap universe. An easy way to think about this index is that it is a US total market index with a slightly
+higher weight in smaller, cheaper, and more profitable companies relative to the market, with an
+exclusion for small cap growth companies with weak profitability that invest aggressively.
+The index has delivered higher returns and higher risk-adjusted returns than the CRSP 1-10 Index,
+which represents the market capitalization weighted US market.
+
+Table 5 - Historical Returns of Dimensional US Core Equity Index and CRSP 1-10
+Index
+1/1/1975 - 6/30/2020
+
+Dimensional US Core
+Equity Index
+
+CRSP 1-10 Index
+
+Annualized Return (%)
+
+13.52
+
+12.12
+
+Annualized Standard Deviation (%)
+
+15.43
+
+15.41
+
+Source: Benjamin Felix; Data source: Dimensional Returns Web
+
+While an annualized difference of 1.40% may not seem meaningful, over the full time period it results
+in a large difference in ending wealth. With a starting $10,000 invested in 1963 the Dimensional
+US Core Equity Index grew the asset to $3,209,000 by June 2020, while the CRSP 1-10 grew it to
+$1,819,000.
+If it is the case that exposure to the known factors explains the excess risk-adjusted returns of the
+Dimensional US Core Equity Index relative to the CRSP 1-10 Index we would expect a multiple
+linear regression to result in a high coefficient of determination1 and an alpha not statistically
+different from zero.
+
+1
+
+The coefficient of determination, R2, is a measure of how well an observed outcome is explained by a model. It is based on the proportion of the total
+variation of outcomes explained by the model.
+
+PAGE 13
+Five Factor Investing with ETFs
+
+Table 6 - Dimensional US Core Equity Index Factor Regression Output
+1/1/1975 - 6/30/2020
+
+Dimensional US Core Equity Index
+Five-Factor Loadings
+t stat
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized
+Alpha (%)
+
+1.01
+
+0.11
+
+0.13
+
+0.14
+
+0.05
+
+-0.16
+
+282.84
+
+19.06
+
+19.67
+
+19.45
+
+5.20
+
+-0.92
+
+Source: Benjamin Felix; Data source: Dimensional Returns Web, Ken French Data Library
+
+As expected, we see a coefficient of determination of 99.73%, leaving almost none of the monthly
+variation in returns unexplained by the model, and an alpha that is not statistically different from
+zero. The fund has statistically significant loadings to the factors in the Five-Factor model. There are
+no surprises here considering that this index has been constructed specifically to capture the factor
+premiums.
+If we were to compare the Dimensional US Core Equity Index to a market index like the CRSP 1-10
+considering only their historical risk-adjusted returns from a CAPM perspective, the Dimensional index
+looks significantly better than the CRSP 1-10 index. Before multi-factor asset pricing models like the
+Five-Factor model, this performance difference could command a high fee – it would look like alpha.
+However, with the Five-Factor model it is possible to see that the performance can be systematically
+implemented through an index fund. The excess returns are no longer alpha; they are fully explained
+by the risk exposures of the index.
+
+4.2
+
+Dividend Growth Investing
+Examining an index that has been designed to capture the factor premiums had a predictable result.
+The same analysis can be applied to strategies like dividend growth investing. It is easy to make the
+empirical observation that dividend growth stocks have matched the market’s returns while being less
+volatile. Take the Vanguard Dividend Appreciation ETF, VIG, as an example. From June 2006 through
+June 2020 VIG delivered nearly identical annualized returns and higher CAPM risk-adjusted returns
+than the Vanguard Total Stock Market ETF, VTI.
+
+Table 7 - Historical Returns of VIG and VTI
+6/1/2006 - 6/30/2020
+
+Vanguard Dividend
+Appreciation ETF
+
+Vanguard Total Stock
+Market ETF
+
+Annualized Return (%)
+
+9.29
+
+9.33
+
+Annualized Standard Deviation (%)
+
+12.50
+
+14.72
+
+Source: portfoliovisualizer.com
+
+PAGE 14
+Five Factor Investing with ETFs
+
+With the empirical observation alone there seems to be a link between dividend growth and risk
+adjusted stock returns. Are dividends special, or is there another explanation? By nature of the fact
+that they pay consistent and growing dividends, it is sensible to think that dividend growth stocks
+are likely to be larger stocks with robust profitability that reinvest conservatively – robust profits and
+conservative investment should result in the cash to pay consistently growing dividends. It would also
+be reasonable to expect companies with long histories of growing their dividends to have low prices
+relative to the book value of their assets – growth stocks with high prices relative to their book value
+do not tend to be dividend growth stocks.
+The results are consistent with these expectations. In a Fama-French Five-Factor regression on VIG
+we see a coefficient of determination of 94.80% - the model explains 94.80% of the fund’s monthly
+variation in returns. We see negative loading to the size factor and slight negative loading to the
+value factor. The slight negative loading to the size and value factors is expected based on the higher
+loading to the profitability factor alongside no controls for size and relative price. All these factor
+loadings are statistically significant at the 95% confidence level. We also see a negative alpha that is
+not statistically different from 0 at the 95% confidence level.
+
+Table 8 - Vanguard Dividend Appreciation ETF Factor Regression Output
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+Annualized
+Alpha (%)
+
+VIG Five-Factor Loadings
+
+0.88
+
+-0.15
+
+-0.06
+
+0.15
+
+0.26
+
+-0.48%
+
+t stat
+
+47.64
+
+-4.49
+
+-1.96
+
+3.23
+
+4.48
+
+-0.55
+
+6/1/2006 - 6/30/2020
+
+Source: Benjamin Felix; Data source: Dimensional Returns Web, Ken French Data Library, Morningstar Direct
+
+The ability of the historical long-short premiums in the Five-Factor model to explain differences in
+returns is powerful. Dividend growth investing is not the only case study. In the 2014 paper Dissecting
+Anomalies with a Five-Factor Model, Fama and French show that the higher average returns
+associated with low market beta, share repurchases, and low volatility are all well-explained by the
+Five-Factor model.
+With its factor exposures it may seem that VIG is a reasonable ETF choice to capture the risk
+premiums in the Five-Factor model. The problem? The portfolio has a negative loading to both
+the size and value factors. More intentional portfolio construction, as opposed to the naïve factor
+exposures gained from a dividend growth focus, could solve this problem.
+
+PAGE 15
+Five Factor Investing with ETFs
+
+5.
+
+Persistence of the Premiums
+We have seen the available historical data in full, which are compelling. However, looking at the full
+historical period means that we are not observing any sub-periods where the factor premiums may
+have been negative.
+
+5.1
+
+Rolling Historical Periods
+If we look at 10-year rolling periods with a one-month step interval for US stocks from July 1963
+through April 2020, SMB has been positive in 72% of rolling 10-year periods, HML has been positive
+in 86% of 10-year rolling periods, RMW has been positive in 86% of 10-year rolling periods, and the
+market has beaten treasury bills in 81% of rolling 10-year periods. Over 20-year periods the data are
+even more compelling. The following table summarizes the percent of historical rolling 10 and 20-year
+time periods where Five-Factor premiums were positive.
+
+Table 9 - Persistence of US Academic Factor Premiums
+7/1/1963 - 6/30/2020
+
+US MKT
+
+US SMB
+
+US HML
+
+US RMW
+
+US CMA
+
+10-year Positive Premiums (% of total periods)
+
+80.70
+
+71.50
+
+86.02
+
+85.66
+
+98.40
+
+20-year Positive Premiums (% of total periods)
+
+100.00
+
+82.47
+
+100.00
+
+100.00
+
+100.00
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+Reflecting on the data, we see that HML, RMW, and CMA have been more consistent at delivering a
+positive premium than the market over 10-year rolling historical periods.
+Similar data are observed for global ex-US Developed stocks starting July 1990 and Emerging
+Markets stocks starting July 1992, both ending June 2020. There are not enough data for a
+meaningful 20-year rolling period comparison in these cases.
+
+Table 10 - Persistence of ex-US Academic Factor Premiums
+7/1/1990 - 6/30/2020
+
+Ex-US
+MKT
+
+Ex-US
+SMB
+
+Ex-US
+HML
+
+Ex-US
+RMW
+
+Ex-US
+CMA
+
+10-year Positive Premiums (% of total periods)
+
+87.55
+
+86.31
+
+90.87
+
+100.00
+
+92.95
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+Table 11 - Persistence of Emerging Markets Academic Factor Premiums
+7/1/1992 - 6/30/2020
+
+10-year Positive Premiums (% of total periods)
+
+EM MKT
+
+EM SMB
+
+EM HML
+
+EM RMW
+
+EM CMA
+
+85.71
+
+49.77
+
+99.08
+
+100.00
+
+100.00
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+PAGE 16
+Five Factor Investing with ETFs
+
+While the persistence over rolling periods alone is of some interest, the relative timing of positive
+premiums may be more important. When one premium has been negative, at least one of the others
+has tended to be positive in the sample. The chart below shows the 10-year rolling MKT, SMB, HML,
+RMW, and CMA premiums for US stocks from July 1963 through June 2020.
+
+Figure 1 - 10-Year Rolling Five-Factor Premiums
+Source: Benjamin Felix; Data Source: Ken French Data Library
+
+The time-varying relationship between factor premiums is also observable through their historical
+correlations with each other, as seen in the following tables.
+
+Table 12 - US Academic Premium Correlation Matrix 7/1/1963 - 6/30/2020
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+MKT-RF
+
+1.00
+
+0.29
+
+-0.22
+
+-0.21
+
+-0.38
+
+SMB
+
+0.29
+
+1.00
+
+-0.04
+
+-0.34
+
+-0.10
+
+HML
+
+-0.22
+
+-0.04
+
+1.00
+
+0.07
+
+0.68
+
+RMW
+
+-0.21
+
+-0.34
+
+0.07
+
+1.00
+
+-0.03
+
+CMA
+
+-0.38
+
+-0.10
+
+0.68
+
+-0.03
+
+1.00
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+PAGE 17
+Five Factor Investing with ETFs
+
+Table 13 - ex-US Academic Premium Correlation Matrix 7/1/1990 - 6/30/2020
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+MKT-RF
+
+1.00
+
+-0.23
+
+-0.14
+
+-0.18
+
+-0.38
+
+SMB
+
+-0.23
+
+1.00
+
+0.10
+
+-0.06
+
+0.02
+
+HML
+
+-0.14
+
+0.10
+
+1.00
+
+-0.35
+
+0.59
+
+RMW
+
+-0.18
+
+-0.06
+
+-0.35
+
+1.00
+
+-0.28
+
+CMA
+
+-0.38
+
+0.02
+
+0.59
+
+-0.28
+
+1.00
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+Table 14 - EM Academic Premium Correlation Matrix 7/1/1992 - 6/30/2020
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+MKT-RF
+
+1.00
+
+-0.21
+
+0.12
+
+-0.28
+
+-0.30
+
+SMB
+
+-0.21
+
+1.00
+
+-0.02
+
+-0.17
+
+0.04
+
+HML
+
+0.12
+
+-0.02
+
+1.00
+
+-0.53
+
+0.31
+
+RMW
+
+-0.28
+
+-0.17
+
+-0.53
+
+1.00
+
+-0.14
+
+CMA
+
+-0.30
+
+0.04
+
+0.31
+
+-0.14
+
+1.00
+
+Source: Benjamin Felix; Data source: Ken French Data Library
+
+5.2
+
+Waiting for the Premiums
+One of the casual arguments against adding additional risk factors to portfolios is that the risk factors
+may take a long time to pay off. That is true - we have seen that there are historical 10-year periods with
+negative premiums for all the factors in the Five-Factor model. The current time period is an example;
+US value stocks have underperformed US growth stocks for more than 10 years at the time of writing.
+This experience is not a reason to avoid value stocks. The market premium has similarly had 10-year
+periods of underperformance in the past. When the market went through those periods, the size and
+value premiums were generally positive. It should be apparent in Figure 1 that this recent period is
+unusual relative to history with the market risk premium dominating while other premiums struggle.
+A recent example of the market going through a prolonged period of underperformance is US stocks
+for the 10-year period ending July 2009. Over that time period the US stock market represented by
+the CRSP 1-10 index lost an annualized 0.19% while the Fama/French US Small Value Research
+Index returned an annualized 9.51%, the Fama/French US Value Research Index returned an
+annualized 3.78%, the Fama/French US High Profitability Research Index returned an annualized
+2.09%, and one-month US Treasury Bills returned an annualized 2.95%. The growth of $1 in each of
+these indices over the 10-year time period is illustrated in Figure 2.
+
+PAGE 18
+Five Factor Investing with ETFs
+
+Figure 2 - Growth of Wealth in US Stocks 1999 – 2009.
+Source: Benjamin Felix; Data Source: Dimensional Returns Web.
+
+This is far from an isolated incident. There were 111 10-year periods ending between July 1973 and
+June 2020 where the US market premium was negative. Over those same 111 periods where the
+market premium was negative, SMB, HML, and CMA were all positive, while RMW was negative in 53
+of the 111 periods.
+The single worst time to retire in the US stock market data was December 1968. From then until
+January 1984, the US market gained an annualized 7.26%, but trailed one-month US Treasury Bills
+which returned an annualized 7.63%, and barely beat inflation which ran at an annualized 7.22%.
+Over the same time period, the Fama/French US Small Value Research Index returned 15.80%
+annualized, and the Fama/French US Value Research Index returned 13.46% annualized.
+A more extreme example is Japan from July 1990 through December 2019. Over the full period the
+Japanese stock market measured by the Fama/French Japan Market Index delivered an annualized
+return of 2.36%, trailing one-month US Treasury Bills which returned 2.63%. The Fama/French
+Japan High Profitability Index delivered similar performance at an annualized 2.27%. Meanwhile,
+the Dimensional Japan Small Cap Value Index and the Fama/French Japan Value Index delivered
+annualized returns of 5.43% and 7.96% respectively. The growth of $1 in each of these Japanese
+indices from 1990 to 2019 is illustrated in Figure 3.
+
+PAGE 19
+Five Factor Investing with ETFs
+
+Figure 3 - Growth of Wealth in Japanese Stocks July 1990 - December 2019
+Source: Benjamin Felix; Data Source: Dimensional Returns Web.
+
+The statement that equity risk factors may take a long time to deliver their premiums is true, but
+the market risk premium is not immune to those periods of underperformance. In fact, the market
+has historically been less reliable at delivering positive 10-year premiums than most of the other risk
+factors. Combining multiple risk premiums together in a portfolio not only increases expected returns,
+it adds independent sources of expected returns which may show up at different times to increase
+the reliability of the long-term outcome.
+Understanding the evidence is important – it is only useful if it can be applied to practical portfolio
+construction.
+
+PAGE 20
+Five Factor Investing with ETFs
+
+6.
+
+Five-Factor Investing with ETFs
+Product availability has been one of the biggest constraints for investors wishing to capture multiple
+risk premiums in a low-cost and well-diversified portfolio. Dimensional Fund Advisors has been
+implementing empirical asset pricing anomalies and asset pricing theory into investment portfolios for
+as long as the evidence and theory have existed – Dimensional launched their first product coincident
+with Banz’ 1981 paper. Unfortunately for DIY ETF investors, Dimensional has only recently filed for
+a handful of ETFs and otherwise restricts access to their mutual funds to institutions and clients of
+certain investment firms.
+
+6.1
+
+Product Availability
+In our March 2019 paper Factor Investing with ETFs, we demonstrated that many funds labeled as
+“multifactor” fail to deliver meaningful exposure to the desired characteristics, especially after costs. A
+possible explanation for the observed “light” risk factor exposure in many retail products is that fund
+companies want to minimize their funds’ tracking error relative to the capitalization weighted index to
+avoid volatile asset flows.
+In that paper we proposed a portfolio with exposure to US value through the iShares Core S&P U.S.
+Value ETF and US small cap value through the iShares S&P Small-Cap 600 Value ETF to gain access
+to some of the known risk factors. That portfolio intentionally targeted size and value in the US while
+ignoring US profitability and investment based on a lack of low-cost, well-diversified, and low turnover
+product availability; outside of the US, factors were ignored entirely for the same reason.
+More recently Avantis Investors launched ETF products that, in broad terms, mirror the approach
+of Dimensional Fund Advisors. Using these products, we have constructed a model portfolio
+that is designed to approximate the characteristics of the portfolios that we use for our wealth
+management clients.
+
+6.2
+
+Approach to Obtaining Factor Exposure
+One of the fundamental portfolio management decisions required when constructing a portfolio
+designed to capture multiple risk factors is whether the desired factors will be targeted across the
+full spectrum of market capitalizations (small, mid, large) or targeted only in small caps. Targeting a
+given level of factor exposure across the full spectrum of capitalizations results in less concentration in
+individual securities, which is desirable. There is strong evidence from Bessembinder (2018) and Dai and
+Wicker (2018) that more concentrated portfolios are increasingly likely to underperform especially over
+long periods of time due to the skewness in individual stock returns. However, the products available
+for Canadians to target risk factors are listed on US exchanges, adding additional complexity and cost
+to the portfolio management process. To manage these trade-offs, we have taken the approach of
+combining US listed small cap value funds with Canadian listed market capitalization weighted funds for
+this model portfolio. Our ideal portfolio is factor tilted across the full spectrum of market capitalizations,
+but we believe that given the other considerations this is a reasonable trade-off.
+
+PAGE 21
+Five Factor Investing with ETFs
+
+One of the biggest considerations for investors implementing this strategy is that the concentrated
+nature of the factor exposure may result in behavioral challenges to sticking with the strategy. At
+the portfolio level volatility should not be materially different from a market capitalization weighted
+portfolio, but the small cap value holdings on their own are likely to exhibit higher volatility.
+
+6.3
+
+Avantis ETFs
+It is important to note that as the Avantis products are relatively new there is insufficient historical
+live fund data to perform meaningful analysis on them. Instead, we are using a combination of
+hypothetical back-tested data net of fund fees and live fund data where it is available. Back-tested
+data tends to look good, often better than comparable live fund data. However, back-test data should
+still provide insight for our purpose of evaluating the fund strategies’ exposure to the risk factors that
+we want to target in portfolios.
+We will use five-factor regression based on the Fama French Five-Factor model to estimate factor
+exposure. Regression outputs tell us how much of a factor premium a fund would have historically
+captured. Alpha in the regressions is the component of fund returns that was not explained by factor
+exposure. It may have come from security selection, market timing, rebalancing, or exposure to some
+as-yet unknown factor that is not included in the Five-Factor model.
+In addition to back-tested returns data and regression outputs we will examine the characteristics of
+each fund relative to a capitalization-weighted total market benchmark.
+
+6.3.1
+
+AVUV
+AVUV is the Avantis U.S. Small Cap Value ETF. This fund is intended to be a US small cap ETF that
+emphasizes cheaper and more profitable companies within the small cap universe. AVUV has a
+management fee of 0.25%. Relative to the US total market, AVUV is substantially smaller and contains
+lower priced stocks.
+
+Table 15 - AVUV Characteristics
+Characteristics 6/30/2020
+
+Avantis U.S. Small Cap Value ETF
+
+Russell 3000
+
+Weighted Average Market Cap
+
+$1.9B
+
+$328.4B
+
+Weighted Average Book/Market
+
+1.23x
+
+0.21x
+
+Weighted Average Profits/Book
+
+0.32x
+
+0.47x
+
+507
+
+3,009
+
+Number of Holdings
+Data source: FactSet
+
+PAGE 22
+Five Factor Investing with ETFs
+
+Table 16 - AVUV Five-Factor Regression Outputs
+Annualized Alpha
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+0.43%
+
+1.03
+
+0.89
+
+0.55
+
+0.34
+
+-0.04
+
+1.04
+
+124.04
+
+72.80
+
+36.52
+
+20.89
+
+-1.46
+
+Avantis U.S. Small Cap
+Value ETF 1/1/1979 6/30/2020*
+t stat
+*hypothetical 1/1/1979 - 09/30/2019
+
+Table 17 - AVUV Historical Performance (Hypothetical until 09/30/2019)
+Portfolio performance 1/1/1979 - 4/30/2020
+(CAD, %)
+
+Avantis U.S. Small Cap
+Value ETF*
+
+Russell 3000 Index
+
+1-Year Return
+
+-17.86
+
+10.43
+
+3-Year Annualized Return
+
+-3.77
+
+11.74
+
+5-Year Annualized Return
+
+1.38
+
+11.88
+
+10-Year Annualized Return
+
+11.12
+
+16.52
+
+20-Year Annualized Return
+
+9.94
+
+5.69
+
+Full period Annualized Return
+
+16.11
+
+12.04
+
+Full period Annualized Standard Deviation
+
+17.12
+
+13.80
+
+Lowest 1-Year Return (4/19 - 3/20); (4/02 - 3/03)
+
+-35.77
+
+-30.64
+
+*hypothetical 1/1/1979 - 09/30/2019
+
+6.3.2 AVDV
+AVDV is the Avantis International Small Cap Value ETF. This fund is intended to be a non-U.S.
+developed small cap ETF that emphasizes cheaper and more profitable companies within non-U.S.
+developed countries. AVDV has a management fee of 0.36%.
+
+Table 18 - AVDV Characteristics
+Avantis International Small Cap
+Value ETF
+
+MSCI World ex USA Index
+
+Weighted Average Market Cap
+
+$2.0B
+
+$52.9B
+
+Weighted Average Book/Market
+
+1.23x
+
+0.59x
+
+Weighted Average Profits/Book
+
+0.36x
+
+0.29x
+
+864
+
+3,498
+
+Characteristics 6/30/2020
+
+Number of Holdings
+Data source: FactSet
+
+PAGE 23
+Five Factor Investing with ETFs
+
+Table 19 - AVDV Five-Factor Regression Outputs
+
+Avantis International Small
+Cap Value ETF 1/1/2003 6/30/2020*
+
+Annualized Alpha
+
+MKT-RF
+
+SMB
+
+HML
+
+RMW
+
+CMA
+
+0.90%
+
+1.11
+
+0.72
+
+0.39
+
+0.09
+
+-0.31
+
+0.81
+
+50.59
+
+14.29
+
+5.88
+
+0.96
+
+-3.92
+
+t stat
+*hypothetical 1/1/2003 - 09/30/2019
+
+Table 20 - AVDV Historical Performance (Hypothetical until 09/30/2019)
+Portfolio performance 1/1/2003 - 6/30/2020 (CAD,
+%)
+
+Avantis International
+Small Cap Value ETF*
+
+MSCI World ex USA
+Index (gross div.)
+
+1-Year Return
+
+-8.01
+
+-1.18
+
+3-Year Annualized Return
+
+-1.11
+
+2.85
+
+5-Year Annualized Return
+
+3.50
+
+4.44
+
+10-Year Annualized Return
+
+10.18
+
+8.78
+
+Full period Annualized Return
+
+9.94
+
+6.51
+
+Full period Annualized Standard Deviation
+
+15.79
+
+12.57
+
+Lowest 1-Year Return (11/07 - 10/08); (3/08 - 2/09)
+
+-44.59
+
+-35.44
+
+*hypothetical 1/1/2003 - 09/30/2019
+
+PAGE 24
+Five Factor Investing with ETFs
+
+7.
+
+Proposed Equity Model Portfolio
+Based on the information presented in this paper, it would seem sensible to target multiple risk factors
+in a portfolio. In order to accomplish factor exposure without making things too complicated we
+propose a 6 ETF equity portfolio consisting of primarily Canadian listed ETFs. Our factor exposure
+comes from AVUV and AVDV, both US listed ETFs. A feature of this model is that it lends itself to
+easy adaptation for RRSP tax efficiency using US listed ETFs; VUN, XEF, and XEC have US listed
+counterparts (VTI, IEFA, and IEMG) which would increase the portfolio’s tax efficiency in an RRSP
+account without affecting the portfolio’s overall asset class exposures presented in Factor Investing
+with ETFs (2019) by adding exposure to International small cap value stocks, and by using funds that
+consider all five factors as opposed to only three of them. It does however give up exposure to large
+and mid-cap value in an effort to keep things simple.
+
+Table 21 - Proposed Five-Factor ETF Model Portfolio
+Fund
+
+Factor Tilted
+
+Benchmark
+
+iShares Core S&P/TSX Capped Composite ETF
+
+XIC
+
+30%
+
+30%
+
+Vanguard US Total Market ETF
+
+VUN
+
+30%
+
+40%
+
+Avantis U.S. Small Cap Value ETF
+
+AVUV
+
+10%
+
+0%
+
+iShares Core MSCI EAFE IMI Index ETF
+
+XEF
+
+16%
+
+22%
+
+Avantis International Small Cap Value ETF
+
+AVDV
+
+6%
+
+0%
+
+iShares Core MSCI Emerging Markets IMI Index ETF
+
+XEC
+
+8%
+
+8%
+
+0.17%
+
+0.11%
+
+Weighted Average Expense Ratio
+
+Table 22 - Five-Factor ETF Model Portfolio Historical Performance (Performance
+Methodology in Appendix B)
+Portfolio performance 7/1/2000 - 6/30/2020 (CAD,%)
+
+Factor Tilted
+
+Benchmark
+
+1-Year Return
+
+-0.66
+
+2.48
+
+3-Year Annualized Return
+
+4.65
+
+6.29
+
+5-Year Annualized Return
+
+6.07
+
+7.13
+
+10-Year Annualized Return
+
+10.14
+
+10.55
+
+20-Year Annualized Return
+
+5.78
+
+4.96
+
+20-Year Annualized Standard Deviation
+
+12.29
+
+11.93
+
+$30,800
+
+$26,300
+
+-33.75
+
+-33.65
+
+Growth of $10,000
+Lowest 1-Year Return (3/08 - 2/09)
+
+PAGE 25
+Five Factor Investing with ETFs
+
+Appendix A – Model Portfolio Performance
+Methodology
+iShares Core S&P/TSX Capped Composite ETF
+• 07/2000 - 02/2001: Monthly return of S&P/TSX Capped Composite Total Return Index net of
+0.0050% estimated fees per month
+•
+
+03/2001 - present: Monthly return of the iShares Core S&P/TSX Capped Composite ETF
+
+iShares Core S&P U.S. Total Market Index ETF
+• 07/2000 - 08/2013: Monthly return of MSCI USA Net Return Index net of 0.013% estimated fees
+per month
+•
+
+09/2013 - present: Monthly return of Vanguard US Total Market ETF
+
+Avantis U.S. Small Cap Value ETF
+• 07/2000 - 09/2019: Avantis monthly US small cap value backtest data net of estimated
+withholding taxes and 0.021% estimated fees per month
+•
+
+10/2019 - present: Monthly returns of Avantis U.S. Small Cap Value ETF
+
+iShares Core MSCI EAFE IMI Index ETF
+• 07/2000 - 04/2013: Monthly return of MSCI EAFE IMI Net Return Index net of 0.018% estimated
+fees per month
+•
+
+05/2013 - present: Monthly return of iShares Core MSCI EAFE IMI Index ETF
+
+Avantis International Small Cap Value ETF
+• 07/2000 - 12/2002: Monthly returns of the Dimensional International Small Cap Value Index net of
+estimated withholding taxes and 0.030% estimated fees per month
+•
+
+01/2003 - 09/2019: Avantis monthly International small cap value backtest data net of estimated
+withholding taxes and 0.030% estimated fees per month
+
+•
+
+10/2019 - present: Monthly returns of Avantis International Small Cap Value ETF
+
+iShares Core MSCI Emerging Markets IMI Index ETF
+• 07/2000 - 04/2013: Monthly return of MSCI EM IMI Net Return Index net of 0.023% estimated
+fees per month
+•
+
+05/2013 - present: Monthly return of iShares Core MSCI Emerging Markets IMI Index ETF
+
+PAGE 26
+Five Factor Investing with ETFs
+
+Appendix B - Backtest data and Index
+Methodologies
+The backtested Avantis performance results provided here are largely hypothetical (until October, 2019).
+Hypothetical performance results have many inherent limitations. Hypothetical trading does not involve financial
+risk, and no hypothetical trading record can completely account for the impact of financial risk in actual trading.
+In addition, the hypothetical performance results do not represent actual recommendations or trading decisions,
+and they may not reflect the impact that economic and market factors might have had on the investment
+decision-making. For example, the ability to withstand losses or to adhere to a particular trading program in
+spite of losses can adversely affect actual results. There are numerous other factors related to the markets
+in general or to the implementation of any specific trading program that cannot be fully accounted for in the
+preparation of hypothetical performance results, but which can adversely affect actual results.
+No representation is being made that any account will or is likely to achieve profits or losses similar to those
+shown. In fact, there are frequently sharp differences between hypothetical performance results and actual
+results. Backtested performance results do not represent the results of actual trading using client assets
+but were achieved by means of the retroactive application of a hypothetical portfolio that was designed with
+the benefit of hindsight. The hypothetical performance results should not be considered indicative of any
+actual performance results, or of any results that could be attained by clients. Backtested performance is
+no guarantee of future results. The hypothetical strategy performance was calculated using historical US
+company data on a monthly basis with annual reconstitutions and assuming dividend reinvestments. The
+hypothetical strategy focuses on securities of companies in the small cap universe that have high equity to
+price and high profitability. Returns are gross of fees and do not assume any trading costs.
+The Dimensional International Small Cap Value Index has been retrospectively calculated by Dimensional
+Fund Advisors and did not exist prior to April 2008. Accordingly, the results shown during the periods prior
+to April 2008 do not represent actual returns of the Index. The calculation methodology for the Dimensional
+International Small Cap Value Index was amended in January 2014 to include profitability as a factor in
+selecting securities for inclusion in the index. The calculation methodology for the Dimensional International
+Small Cap Value Index was amended in November 2019 to include asset growth as a factor in selecting
+securities for inclusion in the index. The Dimensional International Small Cap Value Index consists of small
+cap companies in eligible markets whose relative price is in the bottom 35% of their country’s respective
+constituents, after the exclusion of utilities and companies with either negative or missing relative price data.
+The index excludes securities with the lowest profitability within their country’s small cap universe. The index
+also excludes those companies with the highest asset growth within their country’s small cap universe.
+Profitability is defined as operating income before depreciation and amortization minus interest expense
+divided by book equity. Asset growth is defined as change in total assets from the prior fiscal year to current
+fiscal year. The index monthly returns are computed as the simple average of the monthly returns of four subindices, each one reconstituted once a year at the end of each quarter of the year. Maximum index weight
+of any one company is capped at 5%. Countries currently included are Australia, Austria, Belgium, Canada,
+Denmark, Finland, France, Germany, Hong Kong, Ireland, Israel, Italy, Japan, Netherlands, New Zealand,
+Norway, Portugal, Singapore, Spain, Sweden, Switzerland, and United Kingdom. Exclusions: REITs and
+
+Investment Companies. Dimensional Index data compiled by Dimensional.
+
+PAGE 27
+Five Factor Investing with ETFs
+
+Appendix C - Foreign Withholding Tax
+Using US listed ETFs as a Canadian investor has some unique tax implications that need to be considered.
+When a dividend is paid by a company to a foreign shareholder, the country of origin will typically withhold
+some tax. For example, a Japanese company paying a dividend to a Canadian shareholder would result
+in some tax being withheld before the dividend leaves Japan. There are two levels of foreign withholding
+tax that a Canadian resident investor may experience. Level 1 withholding tax is withheld by the source
+country – Japan in the previous example. Level 2 withholding tax occurs when the Japanese stock is
+owned inside of a US listed ETF. In that case Japan withholds tax before paying the dividend to the US
+shareholder (the ETF) and then the US withholds tax when the ETF pays the dividend to the Canadian
+unitholder. US withholding tax is 15% for a Canadian investor who has certified their Canadian residency
+using the form W-8 BEN. Foreign non-US withholding tax for a US resident (the US listed ETF’s residency)
+is closer to 8-9% on average across foreign developed countries and 14-15% for emerging markets.
+Estimating the average foreign withholding tax rate in an international developed or emerging markets ETF
+is accomplished by examining the fund’s annual report. Depending on the account type and the underlying
+ETF structure, different levels of foreign withholding tax can be expected.
+
+Table 18 - Foreign Withholding Tax by Account Type
+RRSP
+
+Held in your
+account
+
+Held in the ETF
+
+US Listed ETF
+
+TFSA
+
+Taxable
+
+Level 1
+
+Level 2
+
+Level 1
+
+Level 2
+
+Level 1
+
+Level 2
+
+US Stocks
+
+Exempt
+
+Not applicable
+
+Unrecoverable
+
+Not applicable
+
+Recoverable
+
+Not applicable
+
+US Listed ETF
+
+International
+Developed
+Stocks
+
+Unrecoverable
+
+Exempt
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Recoverable
+
+US Listed ETF
+
+Emerging
+Markets stocks
+
+Unrecoverable
+
+Exempt
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Recoverable
+
+Canadian
+Listed ETF
+
+US Listed ETF
+of US stocks
+
+Unrecoverable
+
+Not applicable
+
+Unrecoverable
+
+Not applicable
+
+Recoverable
+
+Not applicable
+
+Canadian
+Listed ETF
+
+US Stocks
+
+Unrecoverable
+
+Not applicable
+
+Unrecoverable
+
+Not applicable
+
+Recoverable
+
+Not applicable
+
+Canadian
+Listed ETF
+
+US Listed
+ETF holding
+International
+Developed
+Stocks
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Recoverable
+
+Canadian
+Listed ETF
+
+International
+Developed
+stocks
+
+Unrecoverable
+
+Not applicable
+
+Unrecoverable
+
+Not applicable
+
+Recoverable
+
+Not applicable
+
+Canadian
+Listed ETF
+
+US Listed
+ETF holding
+Emerging
+Markets stocks
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Unrecoverable
+
+Recoverable
+
+PAGE 28
+Five Factor Investing with ETFs
+
+References
+Aharoni, Gil, Grundy, Bruce and Zeng, Qi. “Stock returns and the Miller Modigliani valuation formula:
+Revisiting the Fama French analysis,” Journal of Financial Economics, 110, issue 2, 2013, p. 347-357.
+Banz, Rolf W. “The relationship between return and market value of common stocks,” Journal of Financial
+Economics, 9, issue 1, 1981 p. 3-18.
+Bessembinder, Hendrik,” Do stocks outperform Treasury bills?,” Journal of Financial Economics, 129, issue
+3, 2018, p. 440-457.
+Black, Fischer, “Capital Market Equilibrium with Restricted Borrowing,” The Journal of Business, 45, issue
+3, 1972 p. 444-55.
+Blitz, David, and Hanauer, Matthias X. “Settling the Size Matter,” The Journal of Portfolio Management
+Quantitative Special Issue 2021, jpm.2020.1.187.
+Carhart, Mark, “On Persistence in Mutual Fund Performance,” Journal of Finance, 52, issue 1, 1997, p.
+57-82,
+Dai, Wei, and Wicker, Matt, “How Diversification Impacts Investment Outcomes: A Case Study on Global
+Large Caps,” Dimensional White Paper, 2018.
+Fama, Eugene F. “Efficient Capital Markets: A Review of Theory and Empirical Work,” The Journal of
+Finance, vol. 25, no. 2, 1970, pp. 383–417.
+Fama, Eugene F. and French, Kenneth R., “Luck versus Skill in the Cross-Section of Mutual Fund Returns,”
+Journal of Finance, 65, issue 5, 2010, p. 1915-1947.
+Fama, Eugene F. and French, Kenneth R., “A five-factor asset pricing model,” Journal of Financial
+Economics, 116, issue 1, 2015, p. 1-22.
+Fama, Eugene F. and French, Kenneth R.,”Dissecting Anomalies with a Five-Factor Model,” Review of
+Financial Studies, 29, issue 1, 2016 p. 69-103.
+Fama, Eugene F. and French, Kenneth R., “The Value Premium,” Fama-Miller Working Paper No. 20-01I,
+2020.
+Jegadeesh, Narasimhan and Titman, Sheridan, “Returns to Buying Winners and Selling Losers:
+Implications for Stock Market Efficiency,” Journal of Finance, 48, issue 1, 1993, p. 65-91.
+Novy-Marx, Robert. “The other side of value: The gross profitability premium,” Journal of Financial
+Economics, 108, issue 1, 2013, p. 1-28.
+Novy-Marx, Robert, “Quality Investing,” 2014.
+Rosenberg, Barr, Reid, Kenneth, and Lanstein, Ronald. “Persuasive evidence of market inefficiency,” The
+Journal of Portfolio Management, Spring 1985, 11 (3) 9-16.
+Sharpe, W.F. “Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk,” The Journal
+of Finance, vol. 19, 1964, pp. 425-442.
+Titman, Sheridan, John Wei, K. C. and Xie, Feixue. “Capital Investments and Stock Returns,” The Journal
+of Financial and Quantitative Analysis, Vol. 39, No. 4, 2004, pp. 677-700.
+
+PAGE 29
+Five Factor Investing with ETFs
+
+The Author
+
+Benjamin Felix MBA, CFA, CIM, CFP
+Portfolio Manager
+PWL Capital Inc.
+www.pwlcapital.com/author/benjamin-felix/
+With thanks to Raymond Kerzerho and
+Braden Warwick for their helpful feedback
+and comments.
+
+PAGE 30
+Five Factor Investing with ETFs
+
+www.pwlcapital.com
+
+PWL Montreal
+3400 de Maisonneuve O.
+Suite 1501
+Montreal, Quebec
+H3Z 3B8
+
+PWL Ottawa
+265 Carling Avenue,
+8th Floor,
+Ottawa, Ontario
+K1S 2E1
+
+PWL Toronto
+8 Wellington Street East
+3rd Floor
+Toronto, Ontario
+M5E 1C5
+
+PWL Waterloo
+20 Erb St. West
+Suite 506
+Waterloo, Ontario
+N2L 1T2
+
+T 514.875.7566
+1-800.875.7566
+F 514.875.9611
+montreal@pwlcapital.com
+www.pwlcapital.com/montreal
+
+T 613.237.5544
+1-800.230.5544
+F 613.237.5949
+ottawa@pwlcapital.com
+www.pwlcapital.com/ottawa
+
+T 416.203.0067
+1-866.242.0203
+F 416.203.0544
+toronto@pwlcapital.com
+www.pwlcapital.com/toronto
+
+T 519.880.0888
+1-877.517.0888
+F 519.880.9997
+waterloo@pwlcapital.com
+www.pwlcapital.com/waterloo
+
+Portfolio management and brokerage services are offered by PWL Capital Inc.,
+regulated by Investment Industry Regulatory Organization of Canada (IIROC) and is a
+member of the Canadian Investor Protection Fund (CIPF).
+Financial planning and insurance products are offered by PWL Advisors Inc., regulated
+in Ontario by Financial Services Commission of Ontario (FSCO) and in Quebec by the
+Autorité des marchés financiers (AMF). PWL Advisors Inc. is not a member of CIPF.
+
+
