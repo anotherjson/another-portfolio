@@ -21,7 +21,6 @@ This project is a tool that generates a portfolio of ETFs based on the Fama-Fren
 2.  Create a virtual environment and install the dependencies:
 
     ```bash
-    uv venv
     uv sync
     ```
 
